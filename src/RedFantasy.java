@@ -4,24 +4,24 @@ import java.util.Random;
  * RedFantasy
  */
 public class RedFantasy {
-    String[] monsters = new String[22];
-    int[] monstersPoint = new int[22];
+    public String[] monsters = new String[22];
+    public int[] monstersPoint = new int[22];
 
-    int[] playerMonsters = new int[5];
-    int[] playerMonstersPoint = new int[5];
+    public int[] playerMonsters = new int[5];
+    public int[] playerMonstersPoint = new int[5];
 
-    int[] cpuMonsters = new int[5];
-    int[] cpuMonstersPoint = new int[5];
+    public int[] cpuMonsters = new int[5];
+    public int[] cpuMonstersPoint = new int[5];
 
-    int playerHp = 50;
-    int cpuHp = 50;
-    int playerBonusPoint = 0;        
-    int cpuBonusPoint = 0;
+    public int playerHp = 50;
+    public int cpuHp = 50;
+    public int playerBonusPoint = 0;        
+    public int cpuBonusPoint = 0;
 
-    Random rnd = new Random();
+    public Random rnd = new Random();
 
-    int[] playerHistory = new int[100];
-    int[] cpuHistory = new int[100];
+    public int[] playerHistory = new int[100];
+    public int[] cpuHistory = new int[100];
 
     public RedFantasy() {
         initializeMonsters();
@@ -143,29 +143,5 @@ public class RedFantasy {
                 break;
             }
         }
-    }
-
-    public int[] getPlayerHistory() {
-        return this.playerHistory;
-    }
-
-    public int[] getCpuHistory() {
-        return this.cpuHistory;
-    }
-
-    public int getPlayerHp() {
-        return this.playerHp; 
-    }
-
-    public int getCpuHp() {
-        return this.cpuHp;
-    }
-
-    public void setMonstersPoint(int[] tempMonstersPoint) {
-        this.monstersPoint = tempMonstersPoint;
-    }
-
-    public void setMonsterZukan(String[] tempMonsters) {
-        this.monsters = tempMonsters;
     }
 }
